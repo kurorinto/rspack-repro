@@ -6,4 +6,11 @@ export default defineConfig({
       root: "./rsbuild-dist",
     },
   },
+  tools: {
+    postcss: {
+      postcssOptions: {
+        plugins: [require("tailwindcss")],
+      }
+    }
+  }
 });
